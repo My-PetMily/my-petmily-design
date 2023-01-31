@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이펫밀리 Login</title>
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+  </head>
+  <body>
+    <header id="header">
+      <ul class="headerwrap">
+        <li class="logo">
+          <a href="#" title="메인으로">
+            <img src="../img/logo.png" alt="logo">
+          </a>
+        </li>
+      </ul>
+    </header>
+    <div id="container" class="Subcon">
+      <div class="SubconWrap">
+        <div class="loginWrap">
+          <h3>로그인</h3>
+          <div class="line"></div>
+          <div>
+            <form action="" method="post" id="loginForm" name="loginForm" novalidate="novalidate">
+              <input type="hidden" id="returnUrl" name="returnUrl" value="나중에 메인주소 적기">
+              <input type="hidden" id="dupCheck" name="dupCheck" value="Y">
+              <div class="loginForm">
+                <div class="inputBox">
+                  <input type="text" id="email" name="email" class="displayblockInPhone" maxlength="30" placeholder="이메일주소" title="이메일주소" autocomplete="off">
+                  <label for="email">이메일 주소 입력</label>
+                  <p class="formError" id="emailError"></p>
+                </div>
+                <div class="inputBox">
+                  <input type="password" id="password" name="password" class="displayblockInPhone" maxlength="12" placeholder="비밀번호" title="비밀번호" autocomplete="off">
+                  <label for="password">비밀번호 입력</label>
+                  <p class="formError" id="passwordError"></p>
+                </div>
+                <p class="idsave">
+                  <input type="checkbox" id="member_check_save_id" name="check_save_id" fw-fillter fw-label="아이디저장" fw-msg value="T">
+                  <label for="member_check_save_id">아이디 저장</label>
+                </p>
+                <button type="submit" class="btn">로그인</button>
+              </div>
+              <ul class="loginMenu">
+                <li>
+                  <a href="회원가입 주소 적기">회원가입</a>
+                </li>
+                <li>
+                  <a href="비밀번호 찾기 주소 적기">비밀번호 찾기</a>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
