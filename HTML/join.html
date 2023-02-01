@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mypetmily join</title>
+    <link rel="stylesheet" href="../CSS/join.css" type="text/css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <a href="메인페이지 태그"><img src="../img/logo.png" alt="logo" /></a>
+        </div>
+      </header>
+      <div class="container">
+        <div id="contents">
+          <div class="titleArea">
+            <h2>register</h2>
+          </div>
+          <form
+            action=""
+            id="joinForm"
+            name="joinForm"
+            method="post"
+            target="_self"
+            enctype="multipart/form-data"
+          >
+            <div class="xans-element xans-member-join">
+              <div class="ec-base-table typeWrite">
+                <table summary>
+                  <caption>
+                    회원가입
+                  </caption>
+                  <colgroup>
+                    <col style="width: 150px" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr class>
+                      <th scope="row">회원구분</th>
+                      <td>
+                        <input
+                          type="radio"
+                          id="member_type0"
+                          name="member_type"
+                          fw-fillter="isFill"
+                          fw-label="회원구분"
+                          fw-msgvalue="p"
+                          checked="checked"
+                          autocomplete="off"
+                        />
+                        <label for="member_type0">개인회원</label>
+                        <input
+                          type="radio"
+                          id="member_type1"
+                          name="member_type"
+                          fw-filter="isFill"
+                          fw-label="회원구분"
+                          fw-msgvalue="c"
+                          autocomplete="off"
+                        />
+                        <label for="member_type1">사업자회원</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h3>기본정보</h3>
+              <div class="ec-base-table typeWrite">
+                <table summary>
+                  <caption>
+                    회원 기본정보
+                  </caption>
+                  <colgroup>
+                    <col style="width: 150px" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">닉네임</th>
+                      <td>
+                        <input
+                          type="text"
+                          id="member_id"
+                          name="member_id"
+                          fw-filter="isFill&isFill&isMin[4]&isMin[16]&isIdentity"
+                          fw-label="닉네임"
+                          fw-msgclass="inputTypeText"
+                          placeholder
+                          value
+                        />
+                        <span id="idMsg" class="error"
+                          >닉네임을 입력해 주세요.</span
+                        >
+                        (한글/영대소문자 최대 20자)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">비밀번호</th>
+                      <td>
+                        <div class="eTooltip">
+                          <input
+                            type="password"
+                            name="password"
+                            fw-filter="isFill&Min[4]&isMin[16]"
+                            fw-label="비밀번호"
+                            fw-msg
+                            autocomplete="off"
+                            maxlength="16"
+                            0="disabled"
+                            value
+                          />
+                          (영문 대소문자/숫자/특수문자 중 2가지 이상 조합,
+                          10자~16자)
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">비밀번호 확인</th>
+                      <td>
+                        <input
+                          type="password"
+                          id="user_passwd_confirm"
+                          name="user_passwd_confirm"
+                          fw-filter="isFill&Match[passwd]"
+                          fw-label="비밀번호 확인"
+                          fw-msg="비밀번호가 일치하지 않습니다."
+                          autocomplete="off"
+                          maxlength="16"
+                          0="disabled"
+                          value
+                        />
+                        <span id="pwConfirmMsg"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">이메일</th>
+                      <td>
+                        <div class="tdwrap">
+                          <input
+                            type="text"
+                            id="email1"
+                            name="email1"
+                            fw-filter="isFill&Email"
+                            fw-label="이메일"
+                            fw-alone="N"
+                            fw-msg
+                            value
+                          />
+                          <span id="emailMsg"></span>
+                          <div>
+                            <button
+                              type="button"
+                              class="ebtn"
+                              id="btnRecAuthCodePop"
+                            >
+                              <span>인증번호 받기</span>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">이메일 확인</th>
+                      <td>
+                        <div class="emailcode_wrap">
+                          <input
+                            type="password"
+                            id="emailCode"
+                            name="emailCode"
+                            maxlength="6"
+                            onkeypress="return $.onKeyPressFilter('[0-9]', event)"
+                            style="ime-mode: disabled"
+                            onkeyup="this.value=this.value.replace(/[^0-9]/g,'')"
+                          />
+                          <div>
+                            <button
+                              type="button"
+                              class="ebtncode"
+                              id="btnRecAuthCodePop"
+                            >
+                              <span>확인</span>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="ec-base-button">
+                <a
+                  href="#"
+                  class="btnSubmitFix sizeM"
+                  onclick="memberJoinAction()"
+                  >회원가입</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
