@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* header */
+#header {
+  width: 100%;
+  height: 7.2rem;
+}
+#header .headerwrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .headerwrap .logo {
+  padding-top: 20px;
+}
+#header .headerwrap .logo a {
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+}
+#header .headerwrap .logo a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media (max-width: 1199px) {
+  #header .headerwrap {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #fff;
+  }
+}
+
+/* container */
+.Subcon {
+  width: 100%;
+  min-width: 100%;
+  min-height: calc(100vh - 307px);
+  height: auto;
+}
+.SubconWrap {
+  width: 90%;
+  padding: 50px 0 80px;
+  margin: 0 auto;
+  display: block;
+  max-width: none;
+  min-height: calc(100vh - 148px);
+  height: auto;
+}
+.loginWrap {
+  max-width: 58rem;
+  width: 100%;
+  height: auto;
+  margin: 4.2rem auto 0;
+  text-align: center;
+  margin-top: 0;
+}
+h3 {
+  font-size: 2.6rem;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 2.5rem !important;
+}
+.line {
+  width: 70%;
+  height: 2px;
+  background-color: #d9dadb;
+  margin: 0 auto;
+}
+/* login inputBox */
+.loginWrap .loginForm {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.inputBox {
+  width: 100%;
+  display: block;
+}
+.inputBox input {
+  border: 0.1rem solid #d9dadb;
+  font-size: 1.1rem;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem;
+  color: #1d1d1b;
+  width: 100%;
+  line-height: 3.8rem;
+  height: 3.8rem;
+}
+.inputBox label {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(1px);
+}
+p.formError {
+  text-align: left;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  letter-spacing: -0.02em;
+  color: #d00042;
+  margin-top: 1.2rem;
+}
+p.idsave {
+  color: #757575;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 25px;
+}
+input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  border: 0;
+  margin-top: 6px;
+  position: absolute;
+  left: 5px;
+}
+label {
+  display: block;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  margin-left: 20px;
+  text-align: left;
+  padding-left: 5px;
+}
+/* container btn */
+.btn {
+  border-radius: 1.5rem;
+  padding: 0 2rem;
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+  border: 0.1rem solid #333;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  height: auto;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  margin-top: 2rem !important;
+  font-size: 1.6rem;
+  width: 100%;
+  min-height: 3.8rem;
+  line-height: 3.8rem;
+}
+.btn:hover {
+  background-color: #377b38;
+  border-color: #377b38;
+}
+/* loginmenu */
+.loginMenu {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 6rem;
+}
+.loginMenu li {
+  position: relative;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+.loginMenu li:first-child {
+  padding-left: 50px;
+}
+.loginMenu li::before {
+  content: "";
+  display: block;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #d9dadb;
+  position: absolute;
+  right: 0;
+  top: 0.3rem;
+}
+.loginMenu li:last-child::before {
+  width: 0;
+}
+.loginMenu li a {
+  font-size: 1rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.5;
+  color: #6b6b6b;
+}
