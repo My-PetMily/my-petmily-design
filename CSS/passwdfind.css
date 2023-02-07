@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img,
+fieldset {
+  border: none;
+  vertical-align: top;
+}
+input,
+textarea {
+  font-size: 100%;
+  font-family: 'Open Sans', 'Nanum Barun Gothic', 'Nanum Gothic';
+  color: #353535;
+  vertical-align: middle;
+  outline: none;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+}
+/* popup */
+.popup_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+.popup_bg.active {
+  display: block;
+}
+
+.popup {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 3px solid #377b38;
+  overflow: hidden;
+}
+.p_title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.p_notice {
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  padding-top: 60px;
+  line-height: 2em;
+}
+button {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 5px;
+}
+button:hover {
+  background-color: #377b38;
+}
+
+/* header */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 99;
+}
+.logo {
+  display: block;
+  padding: 50px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo > a {
+  display: block;
+}
+.logo > a > img {
+  width: 200px;
+  height: 50px;
+}
+/* container */
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+}
+#contents {
+  position: relative;
+  margin: 0 auto;
+  min-height: 300px;
+}
+.titleArea {
+  margin: 40px 0 45px;
+  text-align: center;
+}
+.line {
+  width: 375px;
+  height: 2px;
+  background-color: #e5e5e5;
+  margin: 20px auto;
+}
+/* form */
+form {
+  display: block;
+  margin-top: 0em;
+}
+.ec-base-box.ClearLine {
+  border: 0;
+}
+.xans-member-findpasswd.ec-base-box {
+  padding: 0 0 39px;
+}
+.ec-base-box {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #e8e8e8;
+  color: #555;
+}
+.xans-member-findpasswd .findPw {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 2px solid #e5e5e5;
+}
+.xans-member-findpasswd.ec-base-box h3 {
+  margin: 0 0 20px;
+  font-size: 15px;
+  color: #000;
+  text-align: center;
+  text-decoration: underline;
+}
+.xans-member-findpasswd .findPw fieldset {
+  margin: 0 2px;
+}
+legend {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+}
+
+.ec-base-desc {
+  overflow: hidden;
+  text-align: left;
+}
+.xans-member-findpasswd .findPw .ec-base-desc li {
+  margin: 8px 0 0;
+}
+.xans-member-findpasswd .findPw .ec-base-desc .term {
+  padding: 0 4px 0 4px;
+}
+.ec-base-desc .term {
+  float: left;
+  margin: 0 0 2px;
+  line-height: 22px;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+.xans-member-findpasswd .findPw .ec-base-desc .desc {
+  padding-left: 35%;
+}
+.xans-member-findpasswd .findPw .ec-base-desc .desc {
+  padding: 0 0 0 0 100px;
+  line-height: 18px;
+}
+.ec-base-desc .desc {
+  display: block;
+  margin: 0 0 2px;
+  min-height: 22px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.xans-member-findpasswd .findPw input[type='text'] {
+  width: 226px;
+  height: 28px;
+  line-height: 28px;
+}
+input[type='text'] {
+  padding: 2px 4px;
+  border: 1px solid #d5d5d5;
+  color: #353535;
+  font-size: 12px;
+}
+.ec-base-desc .desc::after {
+  content: '';
+  display: block;
+  clear: left;
+}
+/* btn */
+.xans-member-findpasswd .findPw .ec-base-button {
+  padding: 40px 3px 10px 0;
+}
+.ec-base-button[class*='gColumn'] {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.ec-base-button {
+  text-align: center;
+}
+.ec-base-button[class*='gColumn'] [class^='btn'] {
+  margin: 0 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  word-break: keep-all;
+  word-wrap: break-word;
+  white-space: normal;
+  flex: 1;
+  align-items: center;
+  justify-self: center;
+}
+[class^='btn'].sizeM {
+  padding: 10px 16px;
+}
+[class^='btnSubmit'],
+a[class^='btnSubmit'] {
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: middle;
+  word-spacing: -0.5px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+  background-color: #444;
+}
+a[class^='btnSubmit']:hover {
+  background-color: #377b38;
+}
