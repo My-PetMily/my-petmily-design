@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이펫밀리 비밀번호 찾기</title>
+    <link rel="stylesheet" href="../CSS/passwdfind.css" type="text/css" />
+  </head>
+  <body>
+    <div class="popup_bg">
+      <div class="popup">
+        <div class="p_title">이메일 임시 비밀번호 전송</div>
+        <div class="p_notice">
+          작성한 이메일로 임시 비밀번호가 전송되었습니다. <br />
+          * 개인 정보 수정에서 비밀번호를 변경하여 주시기 바랍니다. *
+        </div>
+        <button type="button">
+          <a
+            href="file:///C:/Users/hagae/Desktop/my-petmily-design/HTML/login.html"
+            >로그인 페이지 →</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <a href="메인페이지 태그"><img src="../img/logo.png" alt="logo" /></a>
+        </div>
+      </header>
+      <div class="container">
+        <div id="contents">
+          <div class="titleArea">
+            <h2>FIND PASSWORD</h2>
+            <div class="line"></div>
+          </div>
+          <form
+            action=""
+            id="findPasswdForm"
+            name="findPasswdForm"
+            method="post"
+            target="_self"
+            enctype="multipart/form-data"
+          >
+            <input type="hidden" id="nextUrl" name="nextUrl" />
+            <input type="hidden" id="resultURL" name="resultURL" />
+            <div
+              class="xans-element- xans-member xans-member-findpasswd ec-base-box ClearLine"
+            >
+              <div class="findPw">
+                <h3 class="boxTitle">비밀번호 찾기</h3>
+                <fieldset>
+                  <legend>비밀번호 찾기 1단계 정보 입력</legend>
+                  <ul class="ec-base-desc">
+                    <li id="ssn_view" class="name">
+                      <strong class="term" id="name_label">닉네임</strong>
+                      <span class="desc">
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          fw-filter
+                          fw-lable="닉네임"
+                          fw-msg
+                          class="lostInput ec-member-name"
+                          placeholder
+                          value
+                        />
+                      </span>
+                    </li>
+                    <li id="emial_view" class="email">
+                      <strong class="term">이메일</strong>
+                      <span class="desc">
+                        <input
+                          type="text"
+                          id="email"
+                          name="email"
+                          fw-filter="isEmail"
+                          fw-label="이메일"
+                          fw-msg
+                          class="lostInput"
+                          placeholder
+                          value
+                        />
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="ec-base-button gColumn">
+                    <a
+                      href="#none"
+                      class="btnSubmit sizeM"
+                      onclick="findPasswd.action"
+                      >확인</a
+                    >
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
