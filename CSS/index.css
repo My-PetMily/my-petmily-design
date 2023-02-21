@@ -98,7 +98,7 @@ h3 {
   border: 0.1rem solid #d9dadb;
   font-size: 1.1rem;
   padding: 0 1.5rem;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   color: #1d1d1b;
   width: 100%;
   line-height: 3.8rem;
@@ -149,7 +149,7 @@ label {
 }
 /* container btn */
 .btn {
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
   padding: 0 2rem;
   background-color: #333;
   color: #fff;
