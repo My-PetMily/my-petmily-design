@@ -18,7 +18,7 @@ fieldset {
 input,
 textarea {
   font-size: 100%;
-  font-family: 'Open Sans', 'Nanum Barun Gothic', 'Nanum Gothic';
+  font-family: "Open Sans", "Nanum Barun Gothic", "Nanum Gothic";
   color: #353535;
   vertical-align: middle;
   outline: none;
@@ -147,6 +147,20 @@ form {
   padding: 50px;
   border: 2px solid #e5e5e5;
 }
+@media screen and (max-width: 600px) {
+  .xans-member-findpasswd .findPw {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .xans-member-findpasswd .findPw {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
 .xans-member-findpasswd.ec-base-box h3 {
   margin: 0 0 20px;
   font-size: 15px;
@@ -198,19 +212,29 @@ legend {
   word-wrap: break-word;
   word-break: break-all;
 }
-.xans-member-findpasswd .findPw input[type='text'] {
+.xans-member-findpasswd .findPw input[type="text"] {
   width: 226px;
   height: 28px;
   line-height: 28px;
 }
-input[type='text'] {
+@media screen and (max-width: 600px) {
+  .xans-member-findpasswd .findPw input[type="text"] {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .xans-member-findpasswd .findPw input[type="text"] {
+    width: 80%;
+  }
+}
+input[type="text"] {
   padding: 2px 4px;
   border: 1px solid #d5d5d5;
   color: #353535;
   font-size: 12px;
 }
 .ec-base-desc .desc::after {
-  content: '';
+  content: "";
   display: block;
   clear: left;
 }
@@ -218,7 +242,7 @@ input[type='text'] {
 .xans-member-findpasswd .findPw .ec-base-button {
   padding: 40px 3px 10px 0;
 }
-.ec-base-button[class*='gColumn'] {
+.ec-base-button[class*="gColumn"] {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -226,7 +250,7 @@ input[type='text'] {
 .ec-base-button {
   text-align: center;
 }
-.ec-base-button[class*='gColumn'] [class^='btn'] {
+.ec-base-button[class*="gColumn"] [class^="btn"] {
   margin: 0 2px;
   padding-left: 8px;
   padding-right: 8px;
@@ -237,11 +261,11 @@ input[type='text'] {
   align-items: center;
   justify-self: center;
 }
-[class^='btn'].sizeM {
+[class^="btn"].sizeM {
   padding: 10px 16px;
 }
-[class^='btnSubmit'],
-a[class^='btnSubmit'] {
+[class^="btnSubmit"],
+a[class^="btnSubmit"] {
   border: 1px solid transparent;
   border-radius: 0;
   font-size: 13px;
@@ -255,6 +279,6 @@ a[class^='btnSubmit'] {
   color: #fff;
   background-color: #444;
 }
-a[class^='btnSubmit']:hover {
+a[class^="btnSubmit"]:hover {
   background-color: #377b38;
 }
