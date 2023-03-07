@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mypetmily join</title>
     <link rel="stylesheet" href="../CSS/join.css" type="text/css" />
+    <link href="../font/font.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrap">
@@ -88,13 +89,25 @@
                           fw-filter="isFill&isFill&isMin[4]&isMin[16]&isIdentity"
                           fw-label="닉네임"
                           fw-msgclass="inputTypeText"
-                          placeholder
+                          placeholder="닉네임을 입력해주세요"
                           value
                         />
-                        <span id="idMsg" class="error"
+                        <!-- <span id="idMsg" class="error"
                           >닉네임을 입력해 주세요.</span
+                        > -->
+                        <span class="ex">(한글/영대소문자 최대 20자)</span>
+                        <span class="errortxt" style="display: none"
+                          >중복된 닉네임 입니다.</span
                         >
-                        (한글/영대소문자 최대 20자)
+                        <!-- <div class="id-ok">
+                          <button
+                            type="button"
+                            class="ebtn"
+                            id="btnRecAuthCodePop"
+                          >
+                            <span>중복 확인</span>
+                          </button>
+                        </div> -->
                       </td>
                     </tr>
                     <tr>
@@ -110,10 +123,16 @@
                             autocomplete="off"
                             maxlength="16"
                             0="disabled"
+                            placeholder="비밀번호를 입력해주세요"
                             value
                           />
-                          (영문 대소문자/숫자/특수문자 중 2가지 이상 조합,
-                          10자~16자)
+                          <span class="ex">
+                            (영문 대소문자/숫자/특수문자 중 2가지 이상 조합,
+                            10자~16자)
+                          </span>
+                          <span class="errortxt" style="display: none"
+                            >비밀번호를 다시 확인해주세요</span
+                          >
                         </div>
                       </td>
                     </tr>
@@ -127,12 +146,15 @@
                           fw-filter="isFill&Match[passwd]"
                           fw-label="비밀번호 확인"
                           fw-msg="비밀번호가 일치하지 않습니다."
+                          placeholder="비밀번호 확인"
                           autocomplete="off"
                           maxlength="16"
                           0="disabled"
                           value
                         />
-                        <span id="pwConfirmMsg"></span>
+                        <span class="errortxt" style="display: none"
+                          >비밀번호가 일치하지 않습니다</span
+                        >
                       </td>
                     </tr>
                     <tr>
@@ -148,21 +170,24 @@
                             fw-alone="N"
                             fw-msg
                             value
+                            placeholder="이메일을 입력해주세요"
                           />
-                          <span id="emailMsg"></span>
-                          <div>
+                          <span class="errortxt" style="display: none"
+                            >중복된 이메일 입니다</span
+                          >
+                          <!-- <div>
                             <button
                               type="button"
                               class="ebtn"
                               id="btnRecAuthCodePop"
                             >
-                              <span>인증번호 받기</span>
+                              <span>이메일 중복 확인</span>
                             </button>
-                          </div>
+                          </div> -->
                         </div>
                       </td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                       <th scope="row">이메일 확인</th>
                       <td>
                         <div class="emailcode_wrap">
@@ -186,7 +211,7 @@
                           </div>
                         </div>
                       </td>
-                    </tr>
+                    </tr> -->
                   </tbody>
                 </table>
               </div>
