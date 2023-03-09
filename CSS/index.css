@@ -12,6 +12,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+body {
+  font-family: "GoodRG";
+}
 
 /* header */
 #header {
@@ -77,6 +80,7 @@ h3 {
   line-height: 1;
   font-weight: 600;
   margin-bottom: 2.5rem !important;
+  font-family: "GoodBD";
 }
 .line {
   width: 70%;
@@ -103,6 +107,7 @@ h3 {
   width: 100%;
   line-height: 3.8rem;
   height: 3.8rem;
+  font-family: "GoodRG";
 }
 .inputBox label {
   display: block;
@@ -166,6 +171,7 @@ label {
   width: 100%;
   min-height: 3.8rem;
   line-height: 3.8rem;
+  font-family: "GoodBD";
 }
 .btn:hover {
   background-color: #377b38;

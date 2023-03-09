@@ -23,6 +23,9 @@ textarea {
   vertical-align: middle;
   outline: none;
 }
+body {
+  font-family: "GoodRG";
+}
 
 .wrap {
   position: relative;
@@ -112,6 +115,9 @@ header {
   position: relative;
   margin: 0 auto;
   min-height: 300px;
+}
+h2 {
+  font-family: "GoodBD";
 }
 .titleArea {
   margin: 40px 0 45px;

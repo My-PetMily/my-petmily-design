@@ -14,9 +14,10 @@ td {
   vertical-align: top;
 }
 body {
-  font: 11px "Open Sans", "Nanum Gothic", "arial", "sans-serif";
+  font: 11px "GoodRG";
   color: #353535;
   background: #fff;
+  min-width: 410px;
 }
 input {
   font-size: 100%;
@@ -25,6 +26,18 @@ input {
   color: #353535;
   vertical-align: middle;
   outline: none;
+}
+
+.ex {
+  font-family: "GoodRG";
+  display: block;
+  margin-top: 4px;
+}
+.errortxt {
+  color: red;
+  font-family: "GoodRG";
+  margin-top: 4px;
+  display: block;
 }
 
 /* header */
@@ -46,7 +59,7 @@ input {
   height: 50px;
 }
 
-/* container */
+/* mobile-container */
 .container {
   margin: 0 auto;
   overflow: hidden;
@@ -68,18 +81,19 @@ input {
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-family: "GoodBD";
 }
 
-/* form */
 form {
   display: block;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #d5d5d5;
+  margin-bottom: 150px;
 }
 .ec-base-table table {
   position: relative;
   margin: 10px 0 0;
-  border-bottom: 1px solid #dfdfdf;
-  border-top: 0;
-  color: #fff;
   line-height: 1.5;
 }
 table {
@@ -98,7 +112,6 @@ col {
   display: table-column;
 }
 tbody {
-  display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
 }
@@ -112,11 +125,12 @@ tr {
 }
 .ec-base-table tbody th {
   padding: 11px 0 10px 18px;
-  border: 1px solid #dfdfdf;
   color: #353535;
   text-align: left;
-  font-weight: normal;
   background-color: #fff;
+  display: block;
+  font-size: 13px;
+  font-family: "GoodBD";
 }
 .ec-base-table th {
   word-break: break-all;
@@ -124,15 +138,26 @@ tr {
 }
 .ec-base-table.typeWrite td {
   padding: 8px 10px 7px;
+  display: block;
 }
 .ec-base-table td {
   border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
   color: #353535;
   vertical-align: middle;
   word-break: break-all;
   word-wrap: break-word;
 }
-
+td input.error {
+  border: 1px solid red;
+}
+td input.ok {
+  border-color: #377b38;
+}
+.id-ok {
+  display: inline-block;
+  margin-left: 20px;
+}
 /* input radio */
 input[type="radio"],
 input[type="checkbox"] {
@@ -142,8 +167,8 @@ input[type="checkbox"] {
 }
 
 .xans-member-join > h3 {
-  padding: 50px 0 10px;
-  font-size: 12px;
+  padding: 50px 10px 10px;
+  font-size: 13px;
   color: #353535;
 }
 
@@ -168,7 +193,7 @@ input[type="password"] {
   display: block;
   background-color: #444;
   color: #fff;
-  width: 90px;
+  width: 110px;
   cursor: pointer;
   height: 22px;
   border: none;
