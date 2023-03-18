@@ -149,10 +149,10 @@ tr {
   word-wrap: break-word;
 }
 td input.error {
-  border: 1px solid red;
+  border: 2px solid rgb(255, 125, 125);
 }
 td input.ok {
-  border-color: #377b38;
+  border: 2px solid rgb(40, 190, 40);
 }
 .id-ok {
   display: inline-block;
